@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/63effeafca.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Maven+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/estilo.css">
     <title>Consejos y cuidados</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <li><a href="crear-cuenta.html">Crear cuenta</a></li>
                 <li><a href="iniciar-sesion.html">Iniciar sesión</a></li>
             </ul>
-            <h1 class="h1-navbar">Macreame: creaciones en macramé</h1>
+            <h1 class="animate__animated animate__fadeInDown" id="h1-navbar">Macreame: creaciones en macramé</h1>
             <img src="../Imagenes/logo.png" class="logo" alt="macreame logo">
             <ul class="menu">
                 <li><a href="home.html">Inicio</a></li>
@@ -32,59 +33,45 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </nav>
-        <hr class="hr1">
     </header>
     <main> 
-        <!--Grid con bootstrap --! 
-        <h2>Conocé los mejores consejos para cuidar tus piezas de macramé</h2>
-        <div class="container">
-            <div class="row row-cols-2">
-              <div class="col-title">Seguí estos consejos:</div>
-              <div class="col-title">¡Se cuidan muy facilmente!</div>
-              <div class="col">No humedezcas tu pieza. Mantenla en un lugar fresco y seco, libre de humedad.</div>
-              <div class="col-sm"> <div class="cuidado1"></div><iframe width="560" height="315" src="https://www.youtube.com/embed/n9CUcOjYLds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe></div>
-              <div class="col-sm">Las piezas están realizadas para durar muchos años en intactas condiciones, preservala como cualquier otro ítem decorativo.</div>
-              <div class="col">Peina con regularidad los flecos de tu pieza, para que se mantengan prolijos con el paso del tiempo.</div>
-              <div class="col">Si tu pieza es de algodón de color, tené en cuenta que puede verse afectado el mismo por la exposición prolongada a la luz directa del sol.</div>
-              <div class="col">Para limpiar tu pieza de macramé, utiliza un paño seco o un cepillo suave para retirar el polvo.</div>
-              <div class="col">No intentes "ajustar" los nudos o cambiar algo de la trama. Las piezas se elaboran mediante puntos de tejido para conformar un todo, si modificas una, modificas toda la pieza.</div>
-              <div class="col">Limpia tu pieza de macramé con regularidad. Si permites que se deposite en polvo en ella, luego será mas dificil quitarlo.</div>
-            </div>
-          </div>
-          <br><br><br><br>
-        
-        <section class="contenedor">
-            <h3 class="consejo">Seguí estos consejos</h3>
-            <p class="consejo1">No humedezcas tu pieza. Mantenla en un lugar fresco y seco, libre de humedad.
-            </p> 
-            <p class="consejo2">Las piezas están realizadas para durar muchos años en intactas condiciones, preservala como cualquier otro ítem decorativo.
-            </p>
-            <p class="consejo3">Si tu pieza es de algodón de color, tené en cuenta que puede verse afectado el mismo por la exposición prolongada a la luz directa del sol. 
-            </p>
-            <p class="consejo4">No intentes "ajustar" los nudos o cambiar algo de la trama. Las piezas se elaboran mediante puntos de tejido para conformar un todo, si modificas una, modificas toda la pieza.
-            </p>
-            <h3 class="cuidado">Cuidados</h3>
-            <div class="cuidado1"></div><iframe width="560" height="315" src="https://www.youtube.com/embed/n9CUcOjYLds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <p class="cuidado2">Peina con regularidad los flecos de tu pieza, para que se mantengan prolijos con el paso del tiempo.
-            </p>
-            <p class="cuidado3">Para limpiar tu pieza de macramé, utiliza un paño seco o un cepillo suave para retirar el polvo.
-            </p>
-            <p class="cuidado4">Limpia tu pieza de macramé con regularidad. Si permites que se deposite en polvo en ella, luego será mas dificil quitarlo. 
-            </p>
-        </section>
-    </section><hr>
-</main>
-<footer class="footer"> <!--footer-->
-    <div class="contact">
-        <i class="fa-regular fa-envelope"></i>
-        <h3 class="h3-footer">hola@macreame.com</h3>
-    </div>
-    <div class="social-network">
-        <i class="fa-brands fa-instagram"></i>
-        <h3 class="h3-footer">Seguinos</h3>
-    </div>
-</footer>
+        <h1 class="h1-cuidados animate__animated animate__fadeInLeft">Aprendé a cuidar tu pieza de macramé</h1>
+        <div class="consejos 1">
+            <h2 class="h2-consejos">¡Se cuidan muy fácilmente!</h2>
+            <p class="p-consejos">No humedezcas tu pieza. Mantenla en un lugar fresco y seco, libre de humedad.</p>
+        </div>
+        <div class="consejos 2">
+            <h2 class="h2-consejos">¡Seguí estos consejos!:</h2>
+            <p class="p-consejos">Las piezas están realizadas para durar muchos años en intactas condiciones, preservala como cualquier otro ítem decorativo.</p>
+        </div>
+        <div class="consejos 3">
+            <h2 class="column">Flecos</h2>
+            <p class="p-consejos">Peiná con regularidad los flecos de tu pieza, para que se mantengan prolijos con el paso del tiempo.</p>
+        </div>
+        <div class="consejos 4">
+            <h2 class="column">Color</h2>
+            <p class="p-consejos">Si tu pieza es de algodón de color, tené en cuenta que puede verse afectado el mismo por la exposición prolongada a la luz directa del sol. </p>
+        </div>
+        <div class="consejos 5">
+            <h2 class="column">Tejido</h2>
+            <p class="p-consejos">No intentes "ajustar" los nudos o cambiar algo de la trama. Las piezas se elaboran mediante puntos de tejido para conformar un todo, si modificas una, modificás toda la pieza. </p>
+        </div>
+        <div class="consejos 6">
+            <h2 class="column">Tejido</h2>
+            <p class="p-consejos">Si se enganchó un punto del entramado, utilizá una aguja para esconderlo por la parte de atrás. </p>
+        </div>
+    </main>
+    <footer class="footer"> <!--footer-->
+        <div class="contact">
+            <i class="fa-regular fa-envelope"></i>
+            <h3 class="h3-footer">hola@macreame.com</h3>
+        </div>
+        <div class="social-network">
+            <i class="fa-brands fa-instagram"></i>
+            <h3 class="h3-footer">Seguinos</h3>
+        </div>
+    </footer>
+    <script src="../js/wow.win.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html> 
