@@ -1,575 +1,111 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #E6E6E3;
-    font-family: 'Maven Pro', sans-serif;
-   
-}
-h1{
-    font-family: 'Clicker Script', cursive;
-   
-}
-h2{
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    color: rgb(99, 96, 96);
-    padding: 40px;
-}
+header .login {
+  background-color: #DBE6CF;
+  list-style: none;
+  text-align: right;
+  font-size: .8rem;
+  grid-column: 6 / 9;
+  display: inline-block;
+  position: relative;
+  cursor: pointer; }
 
-/*Navbar - login*/
-.login{
-    background-color: #DBE6CF;
-    list-style: none;
-    text-align: right;
-    font-size: .8rem;
-    grid-column: 6 / 9;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-  
-}
-.login li{
-    display: inline-block;
-    text-align: right;
-    position: relative;
-    padding: 10px;
-    
-}
-.login li a{
-    text-decoration: none;
-    color: rgb(99, 96, 96);
-    display: inline-block;
-    padding: 10px;
-}
-.login li a:hover{
-    font-weight: bold;
-    color: grey;
-}
-#h1-navbar{
-    font-size: 3rem;
-    grid-column: 4 / 8;
-    display: block;
-}
-.navbar {
-    background-color: #DBE6CF;
-    display:grid;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
-}
-.navbar .logo {
-    width: 60px;
-    height: 60px;
-    opacity: .5;
-    grid-column: 1 / 2;
-}
+header li {
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  padding: 10px; }
 
-.navbar .menu {
-    grid-column: 2 / 6;
-    display: flex;
-    justify-content: space-around;
-    font-size: .9rem;
-    color: rgb(99, 96, 96);
-    cursor: pointer;
-}
+header a {
+  text-decoration: none;
+  color: #636060;
+  display: inline-block;
+  padding: 10px; }
 
-.navbar .menu li {
-    list-style: none;
-    position: relative;
-}
-.navbar .menu li a {
-    text-decoration: none;
-    color: rgb(99, 96, 96);
-    display: inline-block;
-}
+header a:hover {
+  font-weight: bold;
+  color: grey; }
 
-.navbar .menu li a:hover {
-    font-weight: bold;
-    color: #A99EE4
-}
-.navbar .shopping {
-    display: block;
-    grid-row: 3;
-    grid-column: 8 / 9;
-    cursor: pointer;
-    color: rgb(99, 96, 96);
-    align-items: right;
-    font-size: 1.4rem;
-}
+header #h1-navbar {
+  font-size: 3rem;
+  grid-column: 4 / 8;
+  display: block; }
 
+nav .navbar {
+  background-color: #DBE6CF;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center; }
 
-.hr1{
-    border: 0; 
-    height: 12px; 
-    box-shadow: inset 0 12px 12px -12px #adc990;
-}
+nav .logo {
+  width: 60px;
+  height: 60px;
+  opacity: .5;
+  grid-column: 1 / 2; }
 
-/*Index*/
-.bienvenida {
-    height: 80vh;
-    background: rgba(0, 0, 0, 0.2) url(../Imagenes/fondo.jpg);
-    background-blend-mode: darken;
-    background-size: cover;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    
-}
-.info_content {
-    grid-column: 7 / 10;
-    grid-row: 2 / 6;
-    color:beige;
-    font-family: 'Maven Pro', sans-serif;
+nav .menu {
+  grid-column: 2 / 6;
+  display: flex;
+  justify-content: space-around;
+  font-size: .9rem;
+  color: #636060;
+  cursor: pointer; }
 
-}
-.bienvenida .h3-index {
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-family: 'Maven Pro', sans-serif;
-    color: #A99EE4;
-    text-shadow: .6px .6px 4px rgb(70, 65, 65);
-    padding-bottom: 3px;
-}
-.h3-index:hover {
-    color: rgb(240,236,209);
-    text-shadow: .6px .6px 4px rgb(219, 204, 204);
-    
-}
-.bienvenida .h1-index {
-   font-family: 'Clicker script', cursive;
-   font-size: 2.5em;
-   line-height: 90%;
-   color: rgb(235, 232, 232); 
-   text-shadow: .5px .5px 4px rgb(31, 29, 29);
-}
-.bienvenida .p-index {
-    font-weight: bold;
-    font-family: 'Maven Pro', sans-serif;
-    color: rgb(44, 39, 39);
-    text-shadow: .3px .3px 5px #DBE6CF;
-    padding-bottom: 10px;
-    
-}
-.bienvenida .btn {
-    font-size: .9rem;
-    font-weight: bold;
-    background: none;
-    color: rgb(39, 37, 37);
-    padding: 8px 15px;
-    border: 2px solid #A99EE4;
-    border-radius: 30px;
-    margin-top: 10px;
+nav li {
+  list-style: none;
+  position: relative; }
 
-}
-.bienvenida .btn:hover {
-    background-color: #A99EE4;
-    color: #fff;
-    cursor: pointer;
-}
+nav a {
+  text-decoration: none;
+  color: #636060;
+  display: inline-block; }
 
-.btn {
-    display: block;
-    text-decoration: none;
-    animation-name: animat;
-    animation-iteration-count: 3;
-    animation-timing-function: ease;
-    animation-duration: 5s;
-    animation-delay: 0.8s;
-}
+nav a:hover {
+  font-weight: bold;
+  color: #A99EE4; }
 
-@keyframes animat {
-    0% {width: 9vw;}
-    25% {width: 28vw;}
-    50% {width: 9vw;}
-    75% {width: 28vw;}
-    100% {width: 9vw;}
-}
+nav .shopping {
+  display: block;
+  grid-row: 3;
+  grid-column: 8 / 9;
+  cursor: pointer;
+  color: #636060;
+  align-items: right;
+  font-size: 1.4rem; }
 
+nav .hr1 {
+  border: 0;
+  height: 12px;
+  box-shadow: inset 0 12px 12px -12px #adc990; }
 
-/*Home */
+footer .footer {
+  font-family: 'Maven Pro', sans-serif;
+  align-items: center;
+  background-color: #DBE6CF;
+  color: #636060;
+  display: grid;
+  grid-template-areas: "contact social-network"; }
 
-.ofertas{
-    font-family: 'Maven Pro', sans-serif;
-    background: rgb(240,236,209);
-    background: linear-gradient(90deg, rgba(240,236,209,1) 0%, rgba(226,204,230,1) 48%, rgba(208,204,230,1) 100%);
-    margin-top: 20px;
-    padding-top: 10px;
-    margin-right: 150px;
-    margin-left: 150px;
-    border-radius: 2rem;
-    border: 1px solid #E2CCE6;   
-    transition: all 1s; 
-}
-.condiciones{
-    font-family: 'Maven Pro', sans-serif;
-    color: rgb(99, 96, 96); 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-.ofertas:hover {
-    transform: translate(-30px, -10px);
-    font-weight: bold;
-    border: 4px solid #E2CCE6;   
-}
+footer .contact {
+  grid-template-areas: contact;
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
 
-.h2-carousel {
-    font-size: 1.5rem;
-    padding: 20px;
-}
-.container-carousel {
-    display: flex;
-}
+footer .fa-regular {
+  font-size: 1.2rem;
+  margin-right: 15px; }
 
-.container {
-    align-items: center;
-    justify-content: center;
-}
+footer .h3-footer {
+  font-family: 'Maven Pro', sans-serif;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer; }
 
-.destacados{
-    font-family: 'Maven Pro', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-.set-de-espejos{
-    font-family: 'Maven Pro', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-img{
-    margin-left: 20px;
-    margin-right: 20px;
-    opacity: .9;
-    border: 2px double #E2CCE6
-}
-img:hover{
-    opacity: 1;
-    border: 2px double rgb(255, 253, 253);
-}
+footer .social-network {
+  grid-template-areas: social-network;
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
 
-
-/*Consejos y cuidados*/
-.consejos {
-    float: left;
-    padding: 10px;
-    width: 50%;
-    font-size: 1.6rem;
-}
-
-.column {
-    font-size: 1.3rem;
-
-}
-.h1-cuidados {
-    text-align: center;
-    color: rgb(99, 96, 96); 
-    font-size: 2rem;
-    margin-top: 30px;
-    font-family: 'Maven Pro', sans-serif;
-}
-.h2-consejos {
-    font-size: 1.5rem;
-}
-
-.p-consejos {
-    font-size: 1rem;
-    margin: 30px;
-}
-
-.consejos .p-cuidados {
-    background: rgb(240,236,209);
-    background: linear-gradient(90deg, rgba(240,236,209,1) 0%, rgba(226,204,230,1) 48%, rgba(208,204,230,1) 100%);
-}
-
-/*Footer*/
-
-.footer {
-    font-family: 'Maven Pro', sans-serif;
-    align-items: center;
-    background-color: #DBE6CF;
-    color: rgb(99, 96, 96);
-    display: grid;
-    grid-template-areas: 
-    "contact social-network";
-}
-
-.h3-footer {
-    font-family: 'Maven Pro', sans-serif;
-    align-items: center;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.footer .contact {
-    grid-template-areas: contact;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-     
-}
-.footer .contact .fa-regular{
-    font-size: 1.2rem;
-    margin-right: 15px;
-}
-.footer .social-network {
-    grid-template-areas: social-network;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-.footer .social-network .fa-brands {
-    font-size: 1.2rem;
-    margin-right: 15px;
-}
-
-
-/*Preguntas frecuentes*/
-
-
-
-/*Forms*/
-form{
-    background: linear-gradient(90deg, rgba(240,236,209,1) 0%, rgba(226,204,230,1) 48%, rgba(208,204,230,1) 100%);
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 3rem 3rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 80px -5px rgb(0 0 0 / 30%);
-    text-align:left;
-    line-height: 25px;
-}
-.form_title{
-    font-size: 1.5rem;
-    margin-bottom: .5em;
-}
-.form_paragraph{
-    font-weight: 400;
-    color: rgb(99, 96, 96);
-}
-.form_link{
-    font-weight: 400;
-}
-.form_container{
-    margin-top: 1em;
-    display: grid;
-    gap: 1.5em;
-    color: rgb(99, 96, 96);
-}
-.form_group{
-    position: relative;
-}
-.form_label{
-    color:rgb(99, 96, 96);
-}
-button{
-    color: rgb(99, 96, 96)
-   
-}
-
-/* Media Queries*/
-
-/*Portada*/
-/*Computer*/ 
-@media only screen and (max-width: 1200px) {
-    /*Navbar section*/
-       .navbar {
-           position: relative;
-       }
-
-       .h1-navbar {
-           font-size: 1.5rem;
-       }
-       .navbar .logo{
-           width: 30px; 
-           height: 30px;
-           display: block;
-           grid-row: 3;
-           grid-column: 1;
-       }
-       .navbar .login {
-        font-size: .5rem;
-       }
-     
-       .navbar .menu {
-            font-size: .7rem;
-            justify-content: space-between;
-            grid-column: 2 / 7;
-            grid-row: 3;
-       }
-
-       .navbar .shopping {
-            display: block;
-            grid-row: 3;
-            grid-column: 8;
-            cursor: pointer;
-            color: rgb(99, 96, 96);
-        }
-   
-       /*Index section*/
-       .bienvenida .info_content {
-           grid-column: 4 / 10;
-           grid-row: 4 / 8;
-       }
-       .bienvenida .h1-index {
-           font-size: 1.5rem;
-       }
-       .bienvenida .h3-index {
-           font-size: 1.2rem;
-       }
-       .bienvenida .p-index {
-           font-size: 1rem;
-       }
-       .bienvenida .btn {
-           font-size: .8rem;
-           padding: 6px 10px;
-           border: .6px solid #A99EE4;
-           border-radius: 30px;
-           margin-top: 10px;
-       }   
-
-       /* Home section*/
-       .ofertas p {
-           font-size: .8rem;
-       }
-
-       /*Footer section*/ 
-       .footer {
-           padding-bottom: 20px;
-           font-size: .8rem;
-       }
-       .content .social_network {
-           font-size: 1.2rem;
-           align-items: auto; 
-       }
-
-}
-
-/*consejos y cuidados*/
-/*tablets*/
-@media only screen and (max-width:768px){
-    .consejos  {
-        width: 50%;
-        padding: 20px;
-        font-size: 1.6rem;
-    }
-    .h1-cuidados {
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    h2 .column {
-        font-size: 1rem;
-    }
-    #h1-navbar {
-        font-size: 1rem;
-    }
-}
-   
-/*Mobiles*/ 
-@media only screen and (max-width: 600px) {
-   
-    /*Navbar section*/
-    .navbar {
-        position: relative;
-    }
-    .navbar .logo {
-        width: 20px;
-        height: 20px;
-        grid-column: 1;
-        grid-row: 3;
-    }
-       .navbar .shopping {
-        display: none;
-    }
-    #h1-navbar {
-        font-size: 1.2rem;
-    }
-       
-    .navbar .login {
-        font-size: .5rem;
-        grid-column: 5 / 8;
-    }
-     
-    .navbar .menu {
-        font-size: .6rem;
-        justify-content: space-between;
-        grid-column: 2 / 7;
-    }
-        
-    /*Index section*/
-    .bienvenida .info_content {
-        grid-column: 2 / 10;
-        grid-row: 5 / 8;
-    }
-    .bienvenida .h1-index {
-        font-size: 1.2rem;
-    }
-    .bienvenida .h3-index {
-        font-size: .8rem;
-    }
-    .bienvenida .p-index {
-        font-size: .6rem;
-    }
-    .bienvenida .btn {
-        font-size: .5rem;
-        padding: 5px 10px;
-        border: .5px solid #A99EE4;
-          border-radius: 30px;
-         margin-top: 10px;
-    }   
-
-    /* Home section*/
-    .ofertas p {
-        font-size: .5rem;
-    }
-   
-    /*Footer section*/ 
-    .footer {
-        padding-bottom: 20px;
-        font-size: .6rem;
-    }
-    .content .social_network {
-        font-size: .8rem;
-        align-items: auto;
-    }
-
-    /*Consejos y cuidados*/
-    .consejos  {
-        width: 100%;
-        padding: 20px;
-        margin: 10px;
-    }
-
-    .h1-cuidados {
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .h2-consejos {
-        font-size: .7rem;
-    }
-    .column {
-        font-size: .5rem;
-    }
-           
-    .p-consejos {
-        font-size: .6rem;
-    }
-}
-
-
-
-
-
-  
+footer .fa-brands {
+  font-size: 1.2rem;
+  margin-right: 15px; }

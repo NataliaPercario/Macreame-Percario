@@ -1,0 +1,38 @@
+footer {
+    .footer {
+        font-family: 'Maven Pro', sans-serif;
+        align-items: center;
+        background-color: #DBE6CF;
+        color: rgb(99, 96, 96);
+        display: grid;
+        grid-template-areas: 
+        "contact social-network";
+    }
+        .contact {
+            grid-template-areas: contact;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+            .fa-regular{
+                font-size: 1.2rem;
+                margin-right: 15px;
+            }
+
+    .h3-footer {
+        font-family: 'Maven Pro', sans-serif;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+        .social-network {
+            grid-template-areas: social-network;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+            .fa-brands {
+                font-size: 1.2rem;
+                margin-right: 15px;
+            }
+}
