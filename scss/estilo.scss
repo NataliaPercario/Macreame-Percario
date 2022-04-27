@@ -10,6 +10,8 @@ $griss: #636060;
 body {
     background-color: $body;
     font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0; 
 
     h1 {
         font-family: 'Clicker Script', cursive;
@@ -23,11 +25,11 @@ body {
     }
     /*Index*/
     .bienvenida {
-        height: 80vh;
+        height: 75vw;
         background: rgba(0, 0, 0, 0.2) url(../Imagenes/fondo.jpg);
         background-blend-mode: darken;
         background-size: cover;
-        max-width: 100%;
+        max-width: 900%;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(8, 1fr);
