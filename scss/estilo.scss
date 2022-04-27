@@ -1,24 +1,188 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+$verdehf: #DBE6CF;
+$body: #E6E6E3;
+$lila: #E2CCE6;
+$griss: #636060;
 
 @import "navbar";
 @import "forms";
 @import "footer";
 
 body {
-    background-color: #E6E6E3;
+    background-color: $body;
     font-family: 'Maven Pro', sans-serif;
-}
-    h1{
+
+    h1 {
         font-family: 'Clicker Script', cursive;
     }     
-    h2{
+    h2 {
         font-family: 'Maven Pro', sans-serif;
         font-size: 2rem;
         text-align: center;
-        color: rgb(99, 96, 96);
+        color: $griss;
         padding: 40px;
     }
+    /*Index*/
+    .bienvenida {
+        height: 80vh;
+        background: rgba(0, 0, 0, 0.2) url(../Imagenes/fondo.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    
+        .info_content {
+        grid-column: 7 / 10;
+        grid-row: 2 / 6;
+        color:beige;
+        font-family: 'Maven Pro', sans-serif;
+        }
+        .h3-index {
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-family: 'Maven Pro', sans-serif;
+        color: #A99EE4;
+        text-shadow: .6px .6px 4px rgb(70, 65, 65);
+        padding-bottom: 3px;
+        
+            &:hover {
+                color: rgb(240,236,209);
+                text-shadow: .6px .6px 4px rgb(219, 204, 204);
+            }
+        }
+    .h1-index {
+        font-family: 'Clicker script', cursive;
+        font-size: 2.5em;
+        line-height: 90%;
+        color: rgb(235, 232, 232); 
+        text-shadow: .5px .5px 4px rgb(31, 29, 29);
+    }
+    .p-index {
+        font-weight: bold;
+        font-family: 'Maven Pro', sans-serif;
+        color: rgb(44, 39, 39);
+        text-shadow: .3px .3px 5px #DBE6CF;
+        padding-bottom: 10px;
+    }
+    .btn {
+        font-size: .9rem;
+        font-weight: bold;
+        background: none;
+        color: rgb(39, 37, 37);
+        padding: 8px 15px;
+        border: 2px solid #A99EE4;
+        border-radius: 30px;
+        margin-top: 10px;
+    
+        &:hover {
+            background-color: #A99EE4;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+.btn {
+    display: block;
+    text-decoration: none;
+    animation-name: animat;
+    animation-iteration-count: 3;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-delay: 0.8s;
+}
+}
+
+@keyframes animat {
+    0% {width: 9vw;}
+    25% {width: 28vw;}
+    50% {width: 9vw;}
+    75% {width: 28vw;}
+    100% {width: 9vw;}
+}
+}
+
+/*home*/
+main {
+    .ofertas {
+        font-family: 'Maven Pro', sans-serif;
+        background: rgb(240,236,209);
+        background: linear-gradient(90deg, rgba(240,236,209,1) 0%, rgba(226,204,230,1) 48%, rgba(208,204,230,1) 100%);
+        margin-top: 20px;
+        padding-top: 10px;
+        margin-right: 150px;
+        margin-left: 150px;
+        border-radius: 2rem;
+        border: 1px solid #E2CCE6;   
+        transition: all 1s; 
+        
+        &:hover {
+            transform: translate(-30px, -10px);
+            font-weight: bold;
+            border: 4px solid #E2CCE6;   
+        }
+    }
+    .condiciones {
+        font-family: 'Maven Pro', sans-serif;
+        color: rgb(99, 96, 96); 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+        .h2-carousel {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    .container-carousel {
+        display: flex;
+    }
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+}
+    picture {
+        .destacados {
+            font-family: 'Maven Pro', sans-serif;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 50px;
+
+            img {
+                width: 400px;
+                margin-left: 20px;
+                margin-right: 20px;
+                opacity: .9;
+                border: 2px double #E2CCE6
+            }
+                img:hover {
+                    opacity: 1;
+                    border: 2px double rgb(255, 253, 253);
+                }
+        }
+        .set-de-espejos {
+            font-family: 'Maven Pro', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 50px;
+        
+            img {
+                width: 400px;
+                margin-left: 20px;
+                margin-right: 20px;
+                opacity: .9;
+                border: 2px double #E2CCE6
+            }
+                img:hover {
+                    opacity: 1;
+                    border: 2px double rgb(255, 253, 253);
+                }
+        }   
+    }
+    
+
+   
+

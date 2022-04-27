@@ -1,21 +1,22 @@
 form {
-    background: linear-gradient(90deg, rgba(240,236,209,1) 0%, rgba(226,204,230,1) 48%, rgba(208,204,230,1) 100%);
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 3rem 3rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 80px -5px rgb(0 0 0 / 30%);
-    text-align:left;
-    line-height: 25px;
-    }   
+    .form {
+        background: linear-gradient(90deg, rgba(240,236,209,1) 0%, rgba(226,204,230,1) 48%, rgba(208,204,230,1) 100%);
+        margin: auto;
+        width: 90%;
+        box-shadow: 0 5px 80px -5px rgba(0, 0, 0, 0.245);
+        max-width: 400px;
+        padding: 3rem 3rem;
+        border-radius: 10px;
+        text-align: left;
+        line-height: 25px;
+        }   
     .form_title {
         font-size: 1.5rem;
         margin-bottom: .5em;
     }
     .form_paragraph {
         font-weight: 400;
-        color: rgb(99, 96, 96);
+        color: $griss;
     }
     .form_link {
         font-weight: 400;
@@ -24,14 +25,15 @@ form {
         margin-top: 1em;
         display: grid;
         gap: 1.5em;
-        color: rgb(99, 96, 96);
+        color: $griss;
     }
     .form_group {
         position: relative;
     }
     .form_label {
-        color:rgb(99, 96, 96);
-}
-button {
-    color: rgb(99, 96, 96)
+        color:$griss;
+    }
+    button {
+        color: $griss;
+    }
 }
