@@ -184,7 +184,66 @@ main {
                 }
         }   
     }
-    
+/*consejos y cuidados*/ 
+main 
+    .mainc {
+    padding-top: 2vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vw;
+    margin: auto;
 
-   
+    h2 {
+        width: 100%;   
+        font-size: 1.8rem;
+        font-family: 'Maven Pro', sans-serif;
+        text-align: center;
+        color: $griss;
+        padding: 40px;
+    }
 
+    .contenedor {
+        width: 90%;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        
+        
+        
+        .consejos {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            h3 {
+                font-size: 1.5rem;
+                font-family: 'Maven Pro', sans-serif;
+                text-align: center;
+                color: $griss; 
+                padding-bottom: 1rem;
+            }
+
+            .consejo {
+                padding: 10px;
+            }
+        }
+
+        .cuidados {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-left: 5vw;
+
+            h3 {
+                font-size: 1.5rem;
+                font-family: 'Maven Pro', sans-serif;
+                text-align: center;
+                color: $griss; 
+                padding-bottom: 1rem;
+            }
+
+            .cuidados {
+                padding: 10px;
+            }
+
+            
+        }
+    }
+}
