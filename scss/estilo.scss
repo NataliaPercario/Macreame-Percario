@@ -6,6 +6,7 @@ $griss: #636060;
 @import "navbar";
 @import "forms";
 @import "footer";
+@import "media-queries";
 
 body {
     background-color: $body;
@@ -105,7 +106,7 @@ body {
 }
 
 /*home*/
-main {
+.mainh {
     .ofertas {
         font-family: 'Maven Pro', sans-serif;
         background: rgb(240,236,209);
@@ -185,8 +186,7 @@ main {
         }   
     }
 /*consejos y cuidados*/ 
-main 
-    .mainc {
+.mainc {
     padding-top: 2vw;
     padding-left: 10vw;
     padding-right: 10vw;
