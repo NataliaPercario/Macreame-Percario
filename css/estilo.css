@@ -52,6 +52,15 @@ header .navbar {
         header .navbar .login li a:hover {
           font-weight: bold;
           color: grey; }
+  header .navbar .menu-bar {
+    display: block;
+    grid-row: 3;
+    grid-column: 7 / 8;
+    cursor: pointer;
+    color: #636060;
+    align-items: right;
+    font-size: 1.4rem;
+    display: none; }
   header .navbar .shopping {
     display: block;
     grid-row: 3;
@@ -132,27 +141,179 @@ footer {
       font-size: 1rem;
       cursor: pointer; }
 
-@media only screen and (max-widht: 600px) {
-  .navbar {
+/* Media Queries*/
+@media only screen and (max-width: 1024px) {
+  /*Navbar section*/
+  header .navbar {
     position: relative; }
-  .shopping {
-    display: none; }
-  .menu-bar {
-    display: block;
-    grid-column: 8 / 9;
-    font-size: 2rem;
-    cursor: pointer; }
-  .menu {
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    display: grid;
-    align-items: center;
-    background-color: #DBE6CF;
-    margin-top: 38em;
-    transform: translateX(170%); }
-  .menu-toggle {
-    transform: translateX(0%); } }
+    header .navbar .logo {
+      width: 30px;
+      height: 30px;
+      grid-column: 2 / 3; }
+    header .navbar .menu-bar {
+      display: none; }
+    header .navbar .menu {
+      font-size: .7rem;
+      justify-content: space-between;
+      grid-column: 3 / 7; }
+    header .navbar #h1-navbar {
+      font-size: 2rem; }
+    header .navbar .shopping {
+      grid-column: 8 / 9;
+      font-size: 1rem;
+      color: #636060; }
+  /*Main section*/
+  main .bienvenida {
+    position: relative; }
+    main .bienvenida .info_content {
+      grid-column: 4 / 10;
+      grid-row: 4 / 8; }
+    main .bienvenida .h1-index {
+      font-size: 1.5rem; }
+    main .bienvenida .h3-index {
+      font-size: 1.2rem; }
+    main .bienvenida .p-index {
+      font-size: 2rem; }
+    main .bienvenida .btn {
+      font-size: .8rem;
+      padding: 6px 10px;
+      border: .6px solid #A99EE4;
+      border-radius: 30px;
+      margin-top: 10px; }
+  /*Footer section*/
+  footer .footer {
+    padding-bottom: 20px;
+    font-size: .8rem; }
+    footer .footer .contact {
+      font-size: 1.2rem;
+      align-items: auto; }
+    footer .footer .social_network {
+      font-size: 1.2rem;
+      align-items: auto; } }
+
+/*tablets*/
+@media only screen and (max-width: 768px) {
+  /*Navbar section*/
+  header .navbar {
+    position: relative; }
+    header .navbar .logo {
+      width: 30px;
+      height: 30px;
+      grid-column: 1 / 2; }
+    header .navbar .shopping {
+      display: none; }
+    header .navbar .menu-bar {
+      display: block;
+      grid-column: 8 / 9;
+      color: #636060;
+      font-size: .8rem; }
+    header .navbar .menu {
+      font-size: .6rem;
+      justify-content: space-between;
+      grid-column: 2 / 7; }
+    header .navbar .login {
+      font-size: .5rem; }
+    header .navbar #h1-navbar {
+      font-size: 1.5rem; }
+  /*Main section*/
+  /* index */
+ 
+    /* home*/ 
+    main .bienvenida .info_content {
+      grid-column: 2 / 10;
+      grid-row: 5 / 8; }
+    main .bienvenida .h1-index {
+      font-size: 1.2rem; }
+    main .bienvenida .h3-index {
+      font-size: .8rem; }
+    main .bienvenida .p-index {
+      font-size: .6rem; }
+    main .bienvenida .btn {
+      font-size: .5rem;
+      padding: 5px 10px;
+      border: .5px solid #A99EE4;
+      border-radius: 30px;
+      margin-top: 10px; }
+    main .mainh .ofertas .condiciones p {
+      font-size: .5rem; }
+    main .mainh picture h2 {
+      font-size: 1rem; }
+    main .mainh picture img {
+      width: 200px; }
+  /*Footer section*/
+  footer .footer {
+    padding-bottom: 20px;
+    font-size: .7rem; }
+    footer .footer .contact {
+      font-size: 1rem;
+      align-items: auto; }
+    footer .footer .social_network {
+      font-size: 1rem;
+      align-items: auto; } }
+
+/*Mobiles*/
+@media only screen and (max-width: 600px) {
+  /*Navbar section*/
+  header .navbar {
+    position: relative; }
+    header .navbar .logo {
+      width: 30px;
+      height: 30px;
+      grid-column: 2 / 3; }
+    header .navbar .login {
+      display: none; }
+    header .navbar .shopping {
+      display: none; }
+    header .navbar .menu-bar {
+      display: block;
+      grid-column: 8 / 9;
+      color: #636060;
+      font-size: 2rem;
+      cursor: pointer; }
+    header .navbar .menu {
+      position: absolute;
+      width: 100%;
+      height: 70vh;
+      display: grid;
+      align-items: center;
+      background-color: #DBE6CF;
+      margin-top: 38em;
+      transform: translateX(170%);
+      transition: all 1s; }
+    header .navbar .menu-toggle {
+      transform: translateX(70%); }
+  /*Main section*/
+  main .bienvenida {
+    position: relative; }
+    main .bienvenida .info_content {
+      grid-column: 2 / 10;
+      grid-row: 5 / 8; }
+    main .bienvenida .h1-index {
+      font-size: .8rem; }
+    main .bienvenida .h3-index {
+      font-size: .6rem; }
+    main .bienvenida .p-index {
+      font-size: .4rem; }
+    main .bienvenida .btn {
+      font-size: .4rem;
+      padding: 4px 8px;
+      border: .3px solid #A99EE4;
+      border-radius: 30px;
+      margin-top: 10px; }
+  /*Footer section*/
+  footer .footer {
+    padding-bottom: 20px;
+    font-size: .5rem; }
+    footer .footer .contact {
+      font-size: .6rem;
+      align-items: auto; }
+      footer .footer .contact .h3-footer {
+        font-size: .6rem; }
+    footer .footer .social_network {
+      font-size: .6rem;
+      align-items: auto; }
+      footer .footer .social_network .h3-footer {
+        font-size: .6rem; } }
 
 body {
   background-color: #E6E6E3;

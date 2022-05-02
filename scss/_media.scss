@@ -1,0 +1,280 @@
+/* Media Queries*/
+
+@media only screen and (max-width: 1024px) {
+    /*Navbar section*/
+    header {    
+        .navbar {
+            position: relative;
+       
+            .logo {
+                width: 30px;
+                height: 30px;
+                grid-column: 2 / 3;
+            }
+            .menu-bar {
+                display: none;
+            }
+            .menu {
+                font-size: .7rem;
+                justify-content: space-between;
+                grid-column: 3 / 7;
+            }  
+            #h1-navbar {
+                font-size: 2rem;
+            }  
+            .shopping {
+                grid-column: 8 / 9;
+                font-size: 1rem;
+                color: $griss;
+            } 
+        }
+    }
+            /*Main section*/
+    main {    
+        .bienvenida {
+            position: relative;
+            .info_content {
+                grid-column: 4 / 10;
+                grid-row: 4 / 8;
+                }
+            .h1-index {
+                font-size: 1.5rem;
+            }
+            .h3-index {
+                font-size: 1.2rem;
+            }
+            .p-index {
+                font-size: 2rem;
+            }
+            .btn {
+                font-size: .8rem;
+                padding: 6px 10px;
+                border: .6px solid #A99EE4;
+                border-radius: 30px;
+                margin-top: 10px;
+            } 
+        }  
+    }
+
+    /*Footer section*/ 
+    footer {
+        .footer {
+            padding-bottom: 20px;
+            font-size: .8rem;
+       
+            .contact {
+                font-size: 1.2rem;
+                align-items: auto; 
+            }
+            
+            .social_network {
+                font-size: 1.2rem;
+                align-items: auto; 
+            }
+        }
+    }
+}
+
+/*tablets*/ 
+@media only screen and (max-width: 768px) {
+   
+    /*Navbar section*/
+    header {    
+        .navbar {
+        position: relative;
+       
+            .logo {
+                width: 30px;
+                height: 30px;
+                grid-column: 1 / 2;
+            }
+            .shopping {
+                display: none;
+            }
+
+            .menu-bar {
+                display: block;
+                grid-column: 8 / 9;
+                color: $griss;
+                font-size: .8rem;
+
+            }
+            .menu {
+                font-size: .6rem;
+                justify-content: space-between;
+                grid-column: 2 / 7;
+            }
+            .login {
+                font-size: .5rem;
+                
+            }
+            #h1-navbar {
+                font-size: 1.5rem;
+            }    
+        }
+    }
+   
+       /*Main section*/
+       /* index */
+    main {    
+       .bienvenida {
+            .info_content {
+                grid-column: 2 / 10;
+                grid-row: 5 / 8;
+            }
+            .h1-index {
+                font-size: 1.2rem;
+            }        
+            .h3-index {
+                font-size: .8rem;
+            }
+            .p-index {
+                font-size: .6rem;
+            }
+            .btn {
+                font-size: .5rem;
+                padding: 5px 10px;
+                border: .5px solid #A99EE4;
+                border-radius: 30px;
+                margin-top: 10px;
+                }
+        }
+
+        /* home*/
+        .mainh {
+            .ofertas {
+                .condiciones {
+                    p {                    font-size: .5rem;
+                    }
+                }
+            }
+            picture {
+                h2 {
+                    font-size: 1rem;
+                }
+                img {
+                    width: 200px;
+                }
+            }
+        }
+
+    } 
+    
+    
+   
+   /*Footer section*/ 
+    footer {
+        .footer {
+            padding-bottom: 20px;
+            font-size: .7rem;
+   
+            .contact {
+                font-size: 1rem;
+                align-items: auto; 
+            }
+        
+            .social_network {
+                font-size: 1rem;
+                align-items: auto; 
+            }   
+        }
+    }
+}
+   
+/*Mobiles*/ 
+@media only screen and (max-width: 600px) {
+   
+        /*Navbar section*/
+    header {
+        .navbar {
+            position: relative;
+       
+            .logo {
+                width: 30px;
+                height: 30px;
+                grid-column: 2 / 3;
+            }
+            .login {
+                display: none;
+            }
+            .shopping {
+                display: none;
+            }
+            .menu-bar {
+                display: block;
+                grid-column: 8 / 9;
+                color: $griss;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+            .menu {
+                position: absolute;
+                width: 100%;
+                height: 70vh;
+                display: grid;
+                align-items: center;
+                background-color: $verdehf;
+                margin-top: 38em;
+                transform: translateX(170%);
+                transition: all 1s;
+            }
+            .menu-toggle {
+                transform: translateX(70%);
+            }
+        
+        }    
+    }
+       /*Main section*/
+    main {
+        .bienvenida {
+            position: relative;
+
+            .info_content {
+                grid-column: 2 / 10;
+                grid-row: 5 / 8;
+            }
+            .h1-index {
+                font-size: .8rem;
+            }
+            .h3-index {
+                font-size: .6rem;
+            }
+            .p-index {
+                font-size: .4rem;
+            }
+            .btn {
+                font-size: .4rem;
+                padding: 4px 8px;
+                border: .3px solid #A99EE4;
+                border-radius: 30px;
+                margin-top: 10px;
+            }
+        }
+    }
+      
+   
+   /*Footer section*/ 
+    footer {
+        .footer {
+            padding-bottom: 20px;
+            font-size: .5rem;
+
+            .contact {
+                font-size: .6rem;
+                align-items: auto; 
+            
+                .h3-footer {
+                    font-size: .6rem;
+                }
+            }
+            .social_network {
+                font-size: .6rem;
+                align-items: auto;
+                
+                .h3-footer {
+                    font-size: .6rem;
+                } 
+            }   
+        }
+    }
+}

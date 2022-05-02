@@ -6,7 +6,7 @@ $griss: #636060;
 @import "navbar";
 @import "forms";
 @import "footer";
-@import "media-queries";
+@import "media";
 
 body {
     background-color: $body;
@@ -247,3 +247,4 @@ body {
         }
     }
 }
+

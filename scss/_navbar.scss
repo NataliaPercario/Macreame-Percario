@@ -71,6 +71,16 @@ header {
                 }
             }
         }
+        .menu-bar {
+            display: block;
+            grid-row: 3;
+            grid-column: 7 / 8;
+            cursor: pointer;
+            color: $griss;
+            align-items: right;
+            font-size: 1.4rem;
+            display: none;
+        }
         .shopping {
             display: block;
             grid-row: 3;
